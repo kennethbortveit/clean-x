@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from '@angular/router-deprecated';
-
 @Component({
   selector: 'transparent-navbar',
   directives: [ROUTER_DIRECTIVES],
@@ -53,8 +52,10 @@ class Slogan{
   }
 }
 
+
 @Component({
   selector: 'offer',
+  directives: [],
   inputs: [
     'title',
     'price',
@@ -104,8 +105,7 @@ class Offer{
 
         <slogan></slogan>
 
-        <div class="block block-secondary app-block-marketing-grid special-offers"
-          style="background-color: #f5f5f5;">
+        <div class="block block-secondary app-block-marketing-grid special-offers background">
           <div class="container text-center">
             <div class="row">
               <offer 
@@ -178,7 +178,7 @@ class AboutComponent{
     <form class="form-horizontal">
       <div class="form-group">
         <label class="col-xs-2 control-label">Henvendelsen gjelder:</label>
-        <div class="col-xs-10">
+        <div class="col-lg-10">
           <label class="checkbox-inline">
             <input type="checkbox" id="subjectInspection" value="inspection">Befaring
           </label>
@@ -195,19 +195,19 @@ class AboutComponent{
       </div>
       <div class="form-group">
         <label for="name" class="col-xs-2 control-label">Navn:</label>
-        <div class="col-xs-10">
+        <div class="col-xs-5">
           <input type="text" class="form-control" id="name">
         </div>
       </div>
       <div class="form-group">
         <label for="phone" class="col-xs-2 control-label">Telefonnummer:</label>
-        <div class="col-xs-10">
+        <div class="col-xs-5">
           <input type="text" class="form-control" id="phone">
         </div>
       </div>
       <div class="form-group">
         <label for="email" class="col-xs-2 control-label">Epost:</label>
-        <div class="col-xs-10">
+        <div class="col-xs-5">
           <input type="text" class="form-control" id="email">
         </div>
       </div>
@@ -224,7 +224,7 @@ class AboutComponent{
       </div>
       <div class="form-group">
         <label for="message" class="col-xs-2 control-label">Melding:</label>
-        <div class="col-xs-10">
+        <div class="col-xs-5">
           <textarea class="form-control" id="message" rows="5"></textarea>
         </div>
       </div>
